@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,109 +15,329 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
+        <div id="content">
+          <main>
+            <div class="row g-0">
+              <div class="col-md-5 col-2 fixed-top top-column">
+                <div class="d-none d-md-flex mb-4">
+                  <h3 id="darkMode">
+                    <i class="fa-regular fa-moon"></i>
+                  </h3>
+                </div>
+                <div class="slide">
+                  <label class="animal" id="animal"></label>
+                </div>
+                <h1 class="name fs-2">Hi! I am Ahmad Chata.</h1>
+                <p class="bio">
+                  A Full-Stack Developer with passion for clean code. When I am
+                  not wearing out my not so expensive keyboard, I am either
+                  sleeping or recreating ideas on pinterest.
+                </p>
+                <div class="mb-4 socials">
+                  <a
+                    class="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.twitter.com/ahmadchata/"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    class="linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/ahmadchata/"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    class="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/ahmadchata/"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:ahmadchata@gmail.com"
+                  class="btn rounded-0 btn-lg-sm p-lg-1 px-lg-3 contact-blue me-3"
+                >
+                  Say hi!
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1C9gW_vtJHTBYVsY7IxvIfAzw6rqWBpjx/view?usp=sharing"
+                  class="btn rounded-0 btn-lg-sm p-lg-1 px-lg-3 contact-blue"
+                  download=""
+                >
+                  Get my Resume
+                </a>
+              </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
+              <div class="col-md offset-md-5 side-column">
+                <div class="projects-wrapper">
+                  <h4 class="name gray">PROJECTS.</h4>
+                  <ul class="list-unstyled mt-4">
+                    <li class="link">
+                      <a
+                        class="github pb-3 fs-6 link-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.github.com/ahmadchata/newsweek"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a
+                        class="live pb-3 ms-2 fs-6 link-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://raw.githack.com/ahmadchata/newsweek/feature-homepage/index.html"
+                      >
+                        <i class="fas fa-satellite-dish"></i>
+                      </a>{" "}
+                      <p class="text-uppercase">
+                        <b>newsweek</b>
+                      </p>
+                    </li>
+                    <li class="link">
+                      <p class="text-uppercase">
+                        <b>Bimacred website</b>
+                      </p>
+                    </li>
+                    <li class="link">
+                      <p class="text-uppercase">
+                        <b>Rootsearch Security Nigeria Limited Website</b>
+                      </p>
+                    </li>
+                    <li class="link">
+                      <p class="text-uppercase">
+                        <b>Armed Forces Radio</b>
+                      </p>
+                    </li>
+                    <li class="link">
+                      <p class="text-uppercase">
+                        <b>Logxercise</b>
+                      </p>
+                    </li>
+                    <li class="link">
+                      <p class="text-uppercase">
+                        <b>CSS Linter</b>
+                      </p>
+                    </li>
+                    <li class="link">
+                      <p class="text-uppercase">
+                        <b>Social Media</b>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="light-green">
+                  <h3 class="description text-uppercase text-start py-5 px-4">
+                    Logxercise
+                  </h3>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+                  <p class="description px-2">
+                    A Web app for logging and grouping exercises. Built with
+                    Ruby on Rails, Sass and Bootstrap
+                  </p>
+                  <a
+                    class="github pb-3 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/ahmadchata/logxercise"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    class="live pb-3 ms-4 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://young-mesa-60051.herokuapp.com/"
+                  >
+                    <i class="fas fa-satellite-dish"></i>
+                  </a>
+                </div>
+                <div class="gold">
+                  <h3 class="description text-uppercase text-start py-5 px-4">
+                    Css Linter
+                  </h3>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+                  <p class="description px-2">
+                    A Terminal app that check for errors in CSS files. Built
+                    with Ruby
+                  </p>
+                  <a
+                    class="github pb-3 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/ahmadchata/Linter_CSS"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <div class="dark-gray">
+                  <h3 class="description text-uppercase text-start py-5 px-4">
+                    DEV Directory
+                  </h3>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
+                  <p class="description px-2">
+                    A front-end website for finding developers. Built with HTML,
+                    CSS and Bootstrap
+                  </p>
+                  <a
+                    class="github pb-3 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/ahmadchata/dev-directory"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    class="live pb-3 ms-4 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://raw.githack.com/ahmadchata/dev-directory/homepage/index.html"
+                  >
+                    <i class="fas fa-satellite-dish"></i>
+                  </a>
+                </div>
+                <div class="pink">
+                  <h3 class="description text-uppercase text-start py-5 px-4">
+                    Social Media
+                  </h3>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+                  <p class="description px-2">
+                    A simple social media web app for posting your thoughts and
+                    adding friends. Built with Ruby on Rails, Sass and Bootstrap
+                  </p>
+                  <a
+                    class="github pb-3 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/ahmadchata/social-media"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    class="live pb-3 ms-4 fs-3 link-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://salty-stream-05643.herokuapp.com/"
+                  >
+                    <i class="fas fa-satellite-dish"></i>
+                  </a>
+                </div>
+
+                <section class="articles" id="article">
+                  <h4 class="name gray">ARTICLES.</h4>
+                  <div class="mt-4">
+                    <span class="date text-uppercase">June 30, 2020</span>
+                    <p class="mt-0">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://medium.com/@ahmadchata/align-and-justify-what-you-need-to-know-748f7f2629c8"
+                        class="text-decoration-none fs-6 link"
+                      >
+                        Align and Justify, What you need to know
+                      </a>
+                    </p>
+                    <span class="date text-uppercase">Nov 20, 2020</span>
+                    <p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.microverse.org/blog/how-to-get-better-at-solving-coding-challenges"
+                        class="text-decoration-none fs-6 link"
+                      >
+                        How to Get Better At Solving Coding Challenges
+                      </a>
+                    </p>
+                    <span class="date text-uppercase">Dec 21, 2020</span>
+                    <p>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.microverse.org/blog/how-to-write-a-sql-query-in-ruby-on-rails"
+                        class="text-decoration-none fs-6 link"
+                      >
+                        How to Write a SQL Query in Ruby on Rails
+                      </a>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </main>
+
+          <aside class="row g-0 banner">
+            <h3 class="name gray p-2">ABOUT ME</h3>
+            <div class="banner col-lg-4">
+              {/* <Image
+                src="assets/me.png"
+                class="img-fluid about-img"
+                alt="a picture of me"
+              /> */}
+            </div>
+            <div class="col-lg-8 about-text">
+              <p class="bio">
+                Long before Dinosaurs existed, I was already a Full stack
+                developer and I love working with Ruby especially when I put it
+                on Rails, I enjoy solving complex problems except when it's too
+                complex then I enjoy it even more. I write in JavaScript and my
+                favorite front-end library is React, I test with Jest and RSpec.
+                I like MySQL and PostgreSQL. I love Elephants because they have
+                exceptional memories, are majestic yet powerful and intelligent.{" "}
+                <br />
+                <br />I occasionally write to share my knowledge on blogs -
+                well, that is just a way of calming myself when I feel like
+                smashing my screen because something isn&apos;t working as
+                intended. Why not send me a
+                <a href="mailto:ahmadchata@gmail.com">message</a> so I can tell
+                you more.
+              </p>
+            </div>
+          </aside>
+
+          <footer class="bg-dark">
+            <div class="mb-1 socials-footer bg-dark">
+              <a
+                class="twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.twitter.com/ahmadchata/"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                class="linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ahmadchata/"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                class="github"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.github.com/ahmadchata/"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div>
+              <span class="text-light footer-text">
+                © 2021. Made with ❤️ by Ahmad Chata.
+              </span>
+            </div>
+          </footer>
         </div>
       </main>
     </>
-  )
+  );
 }
