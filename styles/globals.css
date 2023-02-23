@@ -38,10 +38,27 @@
 
 .name-heading {
   font-size: 48px;
+  color: #2f3640;
 }
 
 .short-bio {
   font-size: 28px;
+  color: #2f3640;
+}
+
+.gray {
+  background: #718093;
+}
+
+/* Navbar */
+.links {
+  text-decoration: none;
+  color: #2f3640;
+  transition: color 0.5s ease-out 100ms;
+}
+
+.links:hover {
+  color: #e84118;
 }
 
 @media only screen and (max-width: 767px) {

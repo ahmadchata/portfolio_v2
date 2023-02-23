@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="bg-dark">
-      <div className="mb-1 socials-footer bg-dark">
+    <footer className="bg-dark fixed-bottom py-2">
+      <div className="mb-1 socials-footer">
         <a
           className="twitter"
           target="_blank"
@@ -27,8 +27,8 @@ const Footer = () => {
           <i className="fab fa-github"></i>
         </a>
       </div>
-      <div>
-        <span className="text-light footer-text">
+      <div className="text-center">
+        <span className="text-light branch-font">
           © 2021. Made with ❤️ by Ahmad Chata.
         </span>
       </div>
