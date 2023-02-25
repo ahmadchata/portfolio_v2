@@ -4,13 +4,6 @@ const About = () => {
   return (
     <aside className="row g-0 banner">
       <h3 className="name gray p-2">ABOUT ME</h3>
-      <div className="banner col-lg-4">
-        {/* <Image
-          src="assets/me.png"
-          className="img-fluid about-img"
-          alt="a picture of me"
-        /> */}
-      </div>
       <div className="col-lg-8 about-text">
         <p className="bio">
           Long before Dinosaurs existed, I was already a Full stack developer
