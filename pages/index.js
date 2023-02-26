@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className="d-flex justify-content-center text-center wrapper">
-        <section className="content">
+        <section className="content anim_gradient">
           <h1 className="name-heading monteya-font mb-5">
             Hi! I am Ahmad Chata.
           </h1>
