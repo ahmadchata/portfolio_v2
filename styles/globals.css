@@ -15,18 +15,28 @@
   box-sizing: border-box;
 }
 
+/* main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
 /* Home */
 
-.wrapper {
-  height: 100%;
-}
+/* .wrapper {
+  height: 100vh;
+} */
 
-.content {
+/* .content {
   padding: 10%;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-}
+} */
+
+/* footer {
+  margin-top: auto;
+} */
 
 .monteya-font {
   font-family: 'Monteya', Courier, monospace;
@@ -58,7 +68,7 @@
 }
 
 .links:hover {
-  color: #e84118;
+  color: #0099ff;
 
 }
 .anim_gradient {
