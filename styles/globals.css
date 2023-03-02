@@ -50,6 +50,20 @@
   color: #2f3640;
 }
 
+.show {
+  animation: reveal 1.5s;
+}
+
+.active {
+  border: none;
+  background: #0e6b59;
+}
+
+.bio-buttons {
+  border: none;
+  background: #27ae60;
+}
+
 /* Navbar */
 .links {
   text-decoration: none;
@@ -69,7 +83,17 @@
 }
 
 /*==== Animations ==== */
-
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

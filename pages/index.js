@@ -1,6 +1,13 @@
 import Head from "next/head";
+import { useState } from "react";
+import BioButtons from "@/components/buttons";
 
 export default function Home() {
+  const [bio, setBio] = useState();
+  const showBio = (e) => {
+    setBio(+e.target.id);
+    console.log(bio);
+  };
   return (
     <>
       <Head>
@@ -20,7 +27,14 @@ export default function Home() {
             competences essential for the conception and deployment of web
             applications.
           </p>
-          <span className="green">Read more</span>
+          <BioButtons buttons={["Short", "Long"]} submit={showBio} />
+          {bio === 1 && (
+            <p className="branch-font short-bio w-75 mx-auto show">
+              I am a polyvalent technologist versed in a broad range of
+              competences essential for the conception and deployment of web
+              applications.
+            </p>
+          )}
           <div className="mt-5">
             <svg
               version="1.0"
