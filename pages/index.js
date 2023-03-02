@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Footer from "@/components/footer";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,9 +10,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="text-center">
-        <section className="content">
-          <div>
+      <main className="color-font">
+        <section className="center text-center">
+          <h1 className="name-heading monteya-font my-5">
+            <span className="green">Hi!</span> I am Ahmad Chata.
+          </h1>
+          <p className="branch-font short-bio w-75 mx-auto">
+            I am a polyvalent technologist versed in a broad range of
+            competences essential for the conception and deployment of web
+            applications.
+          </p>
+          <span className="green">Read more</span>
+          <div className="mt-5">
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
@@ -131,14 +135,6 @@ m-539 -2691 c16 -25 -176 -270 -322 -411 -196 -190 -356 -289 -510 -316 -125
               </g>
             </svg>
           </div>
-          <h1 className="name-heading monteya-font mb-5">
-            Hi! I am Ahmad Chata.
-          </h1>
-          <p className="branch-font short-bio w-50 mx-auto">
-            A Full-Stack Developer with passion for clean code. When I am not
-            wearing out my not so expensive keyboard, I am either sleeping or
-            recreating ideas on pinterest.
-          </p>
           <div className="mb-4 socials">
             <a
               className="twitter"
@@ -165,23 +161,6 @@ m-539 -2691 c16 -25 -176 -270 -322 -411 -196 -190 -356 -289 -510 -316 -125
               <i className="fab fa-github"></i>
             </a>
           </div>
-          {/* <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:ahmadchata@gmail.com"
-            className="btn rounded-0 btn-lg-sm p-lg-1 px-lg-3 contact-blue me-3"
-          >
-            Say hi!
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1C9gW_vtJHTBYVsY7IxvIfAzw6rqWBpjx/view?usp=sharing"
-            className="btn rounded-0 btn-lg-sm p-lg-1 px-lg-3 contact-blue"
-            download=""
-          >
-            Get my Resume
-          </a> */}
         </section>
       </main>
     </>

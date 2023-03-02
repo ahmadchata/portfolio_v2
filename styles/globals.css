@@ -15,28 +15,22 @@
   box-sizing: border-box;
 }
 
-/* main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
+.wrapper {
+	background: linear-gradient(-45deg, #ffffff, #d1d9de, #bdc3c7);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
 
 /* Home */
 
-/* .wrapper {
-  height: 100vh;
-} */
-
-/* .content {
-  padding: 10%;
+.center {
+  margin: 0;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
-} */
-
-/* footer {
-  margin-top: auto;
-} */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .monteya-font {
   font-family: 'Monteya', Courier, monospace;
@@ -56,38 +50,37 @@
   color: #2f3640;
 }
 
-.gray {
-  background: #718093;
-}
-
 /* Navbar */
 .links {
   text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
   color: #2f3640;
-  transition: color 0.5s ease-out 100ms;
+  transition: 0.1s ease-out;
 }
 
 .links:hover {
-  color: #0099ff;
-
+  color: #27ae60;
+  font-size: 15px;
 }
-.anim_gradient {
-  background: linear-gradient(90deg, #00DBDE 0%,  #FC00FF  100%);
-          background-size : "400% 400%";
-          animation : "gradient 25s ease infinite";
-      }
-        
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  };
+
+.green {
+  color: #27ae60;
+}
+
+/*==== Animations ==== */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 @media only screen and (max-width: 767px) {
   
