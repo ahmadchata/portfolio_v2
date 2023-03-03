@@ -16,9 +16,9 @@
 }
 
 .wrapper {
-	background: linear-gradient(-45deg, #ffffff, #d1d9de, #bdc3c7);
-	background-size: 400% 400%;
-	animation: gradient 8s ease infinite;
+	background: linear-gradient(#f5f7fa, #c3cfe2);
+	/* background-size: 400% 400%;
+	animation: gradient 8s ease infinite; */
 	height: 100vh;
 }
 
@@ -51,17 +51,60 @@
 }
 
 .show {
+  font-size: 18px;
   animation: reveal 1.5s;
 }
 
 .active {
-  border: none;
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  color: #fff;
   background: #0e6b59;
+  font-family: "Branch";
+  font-weight: 700;
 }
 
 .bio-buttons {
   border: none;
-  background: #27ae60;
+  background: rgba(39, 174, 96, 1);
+  border-radius: 10px;
+  font-family: "Branch";
+  font-weight: 700;
+  box-shadow: 0 0 0 0 rgba(39, 174, 96, 1);
+  transform: scale(1);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.702);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(39, 174, 96, 0);;
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(39, 174, 96, 0);
+  }
+}
+
+.bio-button {
+  box-shadow: 0 0 0 0 #33d9b2;
+  background: #33d9b2;
+  transform: scale(1);
+  color: black;
+  font-family: "Branch";
+  font-weight: 700;
+  animation: pulse-green 2s infinite;
+}
+
+.bio-buttons:hover {
+  background: #0e6b59;
+  color: #fff;
 }
 
 /* Navbar */
@@ -79,16 +122,22 @@
 }
 
 .green {
-  color: #27ae60;
+  color: rgb(39, 174, 96);
+}
+
+.arrow:before {
+  font-size: 1rem;
+  content: "➡";
+}
+
+footer {
+  font-size: 12px;
 }
 
 /*==== Animations ==== */
 @keyframes reveal {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -105,6 +154,7 @@
 		background-position: 0% 50%;
 	}
 }
+
 
 @media only screen and (max-width: 767px) {
   

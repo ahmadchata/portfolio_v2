@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BioButtons from "@/components/buttons";
+import Bio from "../public/data/bio.json";
 
 export default function Home() {
   const [bio, setBio] = useState();
@@ -8,6 +9,7 @@ export default function Home() {
     setBio(+e.target.id);
     console.log(bio);
   };
+
   return (
     <>
       <Head>
@@ -22,25 +24,30 @@ export default function Home() {
           <h1 className="name-heading monteya-font my-5">
             <span className="green">Hi!</span> I am Ahmad Chata.
           </h1>
-          <p className="branch-font short-bio w-75 mx-auto">
+          <p className="branch-font short-bio">
             I am a polyvalent technologist versed in a broad range of
             competences essential for the conception and deployment of web
             applications.
           </p>
-          <BioButtons buttons={["Short", "Long"]} submit={showBio} />
-          {bio === 1 && (
-            <p className="branch-font short-bio w-75 mx-auto show">
-              I am a polyvalent technologist versed in a broad range of
-              competences essential for the conception and deployment of web
-              applications.
+          <span className="monteya-font">About me</span>
+          <span class="arrow mx-2"></span>
+          <BioButtons
+            buttons={["Short", "Long", "Long ago..."]}
+            submit={showBio}
+          />
+          {bio === 0 && <p className="branch-font show mt-4">{Bio["short"]}</p>}
+          {bio === 1 && <p className="branch-font show mt-4">{Bio["long"]}</p>}
+          {bio === 2 && (
+            <p className="branch-font show mt-4">
+              Long ago in a distant land, I Ahmad
             </p>
           )}
           <div className="mt-5">
             <svg
               version="1.0"
               xmlns="http://www.w3.org/2000/svg"
-              width="200pt"
-              height="100pt"
+              width="150pt"
+              height="50pt"
               viewBox="0 0 1492.000000 1005.000000"
               preserveAspectRatio="xMidYMid meet"
             >
@@ -149,7 +156,7 @@ m-539 -2691 c16 -25 -176 -270 -322 -411 -196 -190 -356 -289 -510 -316 -125
               </g>
             </svg>
           </div>
-          <div className="mb-4 socials">
+          {/* <div className="mb-4 socials">
             <a
               className="twitter"
               target="_blank"
@@ -174,7 +181,7 @@ m-539 -2691 c16 -25 -176 -270 -322 -411 -196 -190 -356 -289 -510 -316 -125
             >
               <i className="fab fa-github"></i>
             </a>
-          </div>
+          </div> */}
         </section>
       </main>
     </>

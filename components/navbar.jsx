@@ -25,12 +25,6 @@ const Navbar = () => {
             Blog
           </Link>
         </li>
-
-        <li className="ms-5">
-          <Link href={`/about`} className="links">
-            About
-          </Link>
-        </li>
       </ul>
     </nav>
   );
