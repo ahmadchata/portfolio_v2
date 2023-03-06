@@ -12,23 +12,12 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Home */
-
-.wrapper {
-	background: #e9effd;
-	height: 100vh;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+/* ===== Fonts Start ===== */
 
 .monteya-font {
   font-family: 'Monteya', Courier, monospace;
@@ -38,82 +27,9 @@
   font-family: 'Branch', Courier, monospace;
 }
 
-.name-heading {
-  font-size: 62px;
-}
+/* ===== Fonts End ===== */
 
-.dot {
-  border-radius: 50%;
-  background:#df6650;
-  width: 40px;
-  height: 40px;
-  box-shadow: 0 0 0 0 rgba(223, 102, 80, 1);
-  transform: scale(1);
-  animation: pulse-green 2s infinite;
-}
-
-.short-bio {
-  font-size: 20px;
-  color: #2f3640;
-}
-
-.show {
-  font-size: 18px;
-  animation: reveal 1.5s;
-}
-
-.active {
-  --_p: 0px;
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #df6650;
-  outline-color: var(--color);
-  outline-offset: .05em;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  font-size: 16px;
-  border: 0;
-}
-
-
-/* CSS */
-.button-89 {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-89:hover,
-.button-89:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
-}
-
-/* Navbar */
+/* ===== Navbar Start ====== */
 
 .links {
   text-decoration: none;
@@ -123,9 +39,23 @@
   transition: 0.1s ease-out;
 }
 
+nav {
+  background: #e9effd;
+}
+
 .links:hover {
   color: #df6650;
   font-size: 15px;
+}
+
+.dot {
+  border-radius: 50%;
+  background:#df6650;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0 rgba(223, 102, 80, 1);
+  transform: scale(1);
+  animation: pulse-orange 2s infinite;
 }
 
 .orange {
@@ -137,11 +67,100 @@
   content: "➡";
 }
 
+/* ===== Navbar End ===== */
+
+/* ===== Home Start ===== */
+
+.wrapper {
+	background: #e9effd;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.name-heading {
+  font-size: 62px;
+}
+
+.short-bio {
+  font-size: 20px;
+  color: #2f3640;
+}
+
+.bio-view {
+  overflow-y: auto;
+}
+
+.show {
+  font-size: 18px;
+  animation: reveal 1.5s;
+}
+
+.active {
+  --_p: 0px;
+  --b: 3px;
+  --s: .45em;
+  --color: #df6650;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  font-size: 16px;
+  border: 0;
+}
+
+.bio-buttons {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 1rem;
+}
+
+.bio-buttons:hover,
+.bio-buttons:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+/* ===== Home End ===== */
+
+/* ===== Footer Start ===== */
+
 footer {
   font-size: 12px;
 }
 
-/*==== Animations ==== */
+/* ===== Footer End ===== */
+
+/*==== Animations Start ==== */
+
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -162,7 +181,7 @@ footer {
 	}
 }
 
-@keyframes pulse-green {
+@keyframes pulse-orange {
   0% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(223, 102, 80, 0.702);
@@ -179,14 +198,22 @@ footer {
   }
 }
 
+/*==== Animations End ==== */
+
+/* ===== Responsiveness ===== */
 
 @media only screen and (max-width: 767px) {
-  
-}
-
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .name-heading {
+    font-size: 36px;
   }
+
+  .arrow:before {
+    font-size: 1rem;
+    content: "⬇";
+  }
+
+  .center {
+    width: 90%
+  }
+  
 }

@@ -20,11 +20,11 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link href={`/`} className="links">
             Blog
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
