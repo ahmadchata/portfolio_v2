@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState, useEffect, use } from "react";
+import { useState } from "react";
 import BioButtons from "@/components/buttons";
 import Bio from "../public/data/bio.json";
 import WrittenName from "@/components/writtenName";
@@ -25,21 +25,30 @@ export default function Home() {
             <span className="orange">I am</span> Ahmad Chata
           </h1>
 
-          <p className="branch-font short-bio mb-5">Full-Stack Developer</p>
-          <span className="monteya-font">About me</span>
-          <span class="arrow mx-2"></span>
-          <BioButtons
-            buttons={["Short", "Long", "Long ago..."]}
-            submit={showBio}
-          />
-          <p id="demo" className="branch-font show mt-4"></p>
-          {bio === 0 && <p className="branch-font show mt-4">{Bio["short"]}</p>}
-          {bio === 1 && <p className="branch-font show mt-4">{Bio["long"]}</p>}
-          {bio === 2 && (
-            <p className="branch-font show mt-4">
-              Long ago in a distant land, I Ahmad
-            </p>
-          )}
+          <p className="branch-font short-bio mb-3 mb-lg-5">
+            Full-Stack Developer
+          </p>
+          <div className="d-md-flex align-items-center">
+            <p className="monteya-font m-0">About me</p>
+            <p className="arrow mx-2 my-0"></p>
+            <BioButtons
+              buttons={["Short", "Long", "Long ago..."]}
+              submit={showBio}
+            />
+          </div>
+          <div className="mt-4 bio-view">
+            {bio === 0 && (
+              <p className="branch-font show mt-4">{Bio["short"]}</p>
+            )}
+            {bio === 1 && (
+              <p className="branch-font show mt-4">{Bio["long"]}</p>
+            )}
+            {bio === 2 && (
+              <p className="branch-font show mt-4">
+                Long ago in a distant land, I Ahmad
+              </p>
+            )}
+          </div>
           <WrittenName />
           {/* <div className="mb-4 socials">
             <a

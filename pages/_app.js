@@ -7,7 +7,6 @@ export default function App({ Component, pageProps }) {
   return (
     <div className="wrapper">
       <Navbar />
-
       <Component {...pageProps} />
       <Footer />
     </div>

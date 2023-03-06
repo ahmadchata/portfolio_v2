@@ -16,8 +16,8 @@ const BioButtons = ({ buttons, submit }) => {
           id={i}
           name={buttonLabel}
           onClick={(event) => handleClick(event, i)}
-          className={`py-2 px-4 monteya-font me-3  
-            ${i === clickedId ? "active" : "button-89"}
+          className={`py-2 px-4 monteya-font mt-3 mt-lg-0  
+            ${i === clickedId ? "active" : "bio-buttons"}
           `}
         >
           {buttonLabel}
