@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import BioButtons from "@/components/buttons";
 import Bio from "../public/data/bio.json";
 import WrittenName from "@/components/writtenName";
@@ -8,7 +8,6 @@ export default function Home() {
   const [bio, setBio] = useState();
   const showBio = (e) => {
     setBio(+e.target.id);
-    console.log(bio);
   };
 
   return (
@@ -23,7 +22,7 @@ export default function Home() {
       <main className="color-font">
         <section className="center text-center">
           <h1 className="name-heading monteya-font m-0">
-            <span className="orange">I am</span> Ahmad Chata.
+            <span className="orange">I am</span> Ahmad Chata
           </h1>
 
           <p className="branch-font short-bio mb-5">Full-Stack Developer</p>
@@ -33,6 +32,7 @@ export default function Home() {
             buttons={["Short", "Long", "Long ago..."]}
             submit={showBio}
           />
+          <p id="demo" className="branch-font show mt-4"></p>
           {bio === 0 && <p className="branch-font show mt-4">{Bio["short"]}</p>}
           {bio === 1 && <p className="branch-font show mt-4">{Bio["long"]}</p>}
           {bio === 2 && (
