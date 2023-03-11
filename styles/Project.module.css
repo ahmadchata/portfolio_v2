@@ -1,5 +1,5 @@
 .background {
-    background: #e9effd;
+    /* background: #e9effd; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -11,6 +11,7 @@
   
   .scrollText {
     font-size: 1.5rem;
+    text-align: center;
   }
   
   .card {
@@ -30,7 +31,7 @@
   
   .sticky {
     margin-left: 15%;
-    background-color: #ff6d6d;
+    /* background-color: #ff6d6d; */
   }
   
   .blue {

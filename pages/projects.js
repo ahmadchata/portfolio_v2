@@ -2,6 +2,7 @@ import Head from "next/head";
 import * as React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import styles from "../styles/Project.module.css";
+import Image from "next/image";
 
 export default function App() {
   const alignCenter = { display: "flex", alignItems: "center" };
@@ -15,22 +16,27 @@ export default function App() {
       </Head>
       <div className={styles.background} />
 
-      <Parallax pages={5}>
+      <Parallax pages={4}>
         <ParallaxLayer
           offset={0}
           speed={0.5}
           style={{ ...alignCenter, justifyContent: "center" }}
         >
-          <p className={styles.scrollText}>Projects</p>
-          <p className={styles.scrollText}>Scroll down</p>
+          <div>
+            <h1 className="project-heading monteya-font orange">Projects</h1>
+            <p className={styles.scrollText}>Scroll down</p>
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           sticky={{ start: 1, end: 3 }}
-          style={{ ...alignCenter, justifyContent: "flex-start" }}
+          style={{
+            ...alignCenter,
+            justifyContent: "flex-start",
+          }}
         >
           <div className={`${styles.card} ${styles.sticky}`}>
-            <p>React (NextJS)</p>
+            <h1 className="name-heading monteya-font m-0 orange">Ruby/Rails</h1>
           </div>
         </ParallaxLayer>
 
@@ -39,18 +45,52 @@ export default function App() {
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
-          <div className={`${styles.card} ${styles.parallax} ${styles.purple}`}>
-            <p>Rootsearch Security Nigeria Limited Website</p>
+          <div className={`${styles.card} ${styles.parallax}`}>
+            <div>
+              <h1 className="text-dark">Linter</h1>
+              <Image
+                src="/img/linter.png"
+                width={964}
+                height={684}
+                alt="Linter"
+              />
+            </div>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={2.5}
+          offset={2.0}
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
           <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
-            <p>News Week</p>
+            <div>
+              <h1 className="text-dark">Social</h1>
+              <Image
+                src="/img/social.png"
+                width={964}
+                height={684}
+                alt="Linter"
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3.0}
+          speed={1.5}
+          style={{ ...alignCenter, justifyContent: "flex-end" }}
+        >
+          <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
+            <div>
+              <h1 className="text-dark">Logxercise</h1>
+              <Image
+                src="/img/exercise.png"
+                width={602}
+                height={1024}
+                alt="Linter"
+              />
+            </div>
           </div>
         </ParallaxLayer>
       </Parallax>
