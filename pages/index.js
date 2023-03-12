@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="color-font">
+      <main>
         <section className="center text-center">
           <h1 className="name-heading monteya-font m-0">
             <span className="orange">I am</span> Ahmad Chata
