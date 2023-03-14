@@ -44,9 +44,7 @@ export default function Home() {
               <p className="branch-font show mt-4">{Bio["long"]}</p>
             )}
             {bio === 2 && (
-              <p className="branch-font show mt-4">
-                Long ago in a distant land, I Ahmad
-              </p>
+              <p className="branch-font show mt-4">{Bio["verylong"]}</p>
             )}
           </div>
           <WrittenName />
