@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="color-font">
+      <main>
         <section className="center text-center">
           <h1 className="name-heading monteya-font m-0">
             <span className="orange">I am</span> Ahmad Chata
@@ -44,9 +44,7 @@ export default function Home() {
               <p className="branch-font show mt-4">{Bio["long"]}</p>
             )}
             {bio === 2 && (
-              <p className="branch-font show mt-4">
-                Long ago in a distant land, I Ahmad
-              </p>
+              <p className="branch-font show mt-4">{Bio["verylong"]}</p>
             )}
           </div>
           <WrittenName />

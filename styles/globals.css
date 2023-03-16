@@ -71,8 +71,10 @@ nav {
 
 /* ===== Home Start ===== */
 
-.wrapper {
+main {
 	background: #e9effd;
+  display: flex;
+  height: calc(100vh - 122px);
 }
 
 .center {
@@ -82,11 +84,14 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  height: 100vh;
 }
 
 .name-heading {
   font-size: 62px;
+}
+
+.project-heading {
+  font-size: 150px;
 }
 
 .short-bio {
@@ -155,6 +160,7 @@ nav {
 
 footer {
   font-size: 12px;
+  background: #e9effd;
 }
 
 /* ===== Footer End ===== */

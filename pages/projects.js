@@ -1,5 +1,11 @@
 import Head from "next/head";
+import * as React from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import styles from "../styles/Project.module.css";
+import Image from "next/image";
+
 const Projects = () => {
+  const alignCenter = { display: "flex", alignItems: "center" };
   return (
     <>
       <Head>
@@ -8,64 +14,191 @@ const Projects = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="projects-wrapper">
-        <h4 className="name gray">PROJECTS.</h4>
-        <ul className="list-unstyled mt-4">
-          <li className="link">
-            <a
-              className="github pb-3 fs-6 link-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.github.com/ahmadchata/newsweek"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a
-              className="live pb-3 ms-2 fs-6 link-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://raw.githack.com/ahmadchata/newsweek/feature-homepage/index.html"
-            >
-              <i className="fas fa-satellite-dish"></i>
-            </a>{" "}
-            <p className="text-uppercase">
-              <b>newsweek</b>
-            </p>
-          </li>
-          <li className="link">
-            <p className="text-uppercase">
-              <b>Bimacred website</b>
-            </p>
-          </li>
-          <li className="link">
-            <p className="text-uppercase">
-              <b>Rootsearch Security Nigeria Limited Website</b>
-            </p>
-          </li>
-          <li className="link">
-            <p className="text-uppercase">
-              <b>Armed Forces Radio</b>
-            </p>
-          </li>
-          <li className="link">
-            <p className="text-uppercase">
-              <b>Logxercise</b>
-            </p>
-          </li>
-          <li className="link">
-            <p className="text-uppercase">
-              <b>CSS Linter</b>
-            </p>
-          </li>
-          <li className="link">
-            <p className="text-uppercase">
-              <b>Social Media</b>
-            </p>
-          </li>
-        </ul>
-      </div>
+      {/* <div className={styles.background} /> */}
+
+      <Parallax pages={6}>
+        <ParallaxLayer
+          offset={0}
+          speed={0.5}
+          style={{ ...alignCenter, justifyContent: "center" }}
+        >
+          <div>
+            <h1 className="project-heading monteya-font orange">Projects</h1>
+            <p className={styles.scrollText}>Scroll down</p>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 1, end: 3 }}
+          style={{
+            ...alignCenter,
+            justifyContent: "flex-start",
+          }}
+        >
+          <div className={`${styles.card} ${styles.sticky}`}>
+            <h1 className="name-heading monteya-font m-0 orange">Ruby/Rails</h1>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={1.5}
+          speed={1.5}
+          style={{ ...alignCenter, justifyContent: "flex-end" }}
+        >
+          <div className={`${styles.card} ${styles.parallax}`}>
+            <div>
+              <h1 className="text-dark">Linter</h1>
+              <Image
+                src="/img/linter.png"
+                width={964}
+                height={684}
+                alt="Linter"
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2.0}
+          speed={1.5}
+          style={{ ...alignCenter, justifyContent: "flex-end" }}
+        >
+          <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
+            <div>
+              <h1 className="text-dark">Social</h1>
+              <Image
+                src="/img/social.png"
+                width={964}
+                height={684}
+                alt="Linter"
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3.0}
+          speed={1.5}
+          style={{ ...alignCenter, justifyContent: "flex-end" }}
+        >
+          <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
+            <div>
+              <h1 className="text-dark">Logxercise</h1>
+              <Image
+                src="/img/exercise.png"
+                width={602}
+                height={1024}
+                alt="Linter"
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 4, end: 5 }}
+          style={{
+            ...alignCenter,
+            justifyContent: "flex-start",
+          }}
+        >
+          <div className={`${styles.card} ${styles.sticky}`}>
+            <h1 className="name-heading monteya-font m-0 orange">
+              React(NextJS)
+            </h1>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={4.0}
+          speed={1.5}
+          style={{ ...alignCenter, justifyContent: "flex-end" }}
+        >
+          <div className={`${styles.card} ${styles.parallax}`}>
+            <div>
+              <h1 className="text-dark">Linter</h1>
+              <Image
+                src="/img/linter.png"
+                width={964}
+                height={684}
+                alt="Linter"
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+      </Parallax>
     </>
   );
 };
 
 export default Projects;
+
+// const Projects = () => {
+//   return (
+//     <>
+//       <Head>
+//         <title>Ahmad Chata - Projects</title>
+//         <meta name="description" content="Generated by create next app" />
+//         <meta name="viewport" content="width=device-width, initial-scale=1" />
+//         <link rel="icon" href="/favicon.ico" />
+//       </Head>
+//       <div className="projects-wrapper">
+//         <h4 className="name gray">PROJECTS.</h4>
+//         <ul className="list-unstyled mt-4">
+//           <li className="link">
+//             <a
+//               className="github pb-3 fs-6 link-secondary"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               href="https://www.github.com/ahmadchata/newsweek"
+//             >
+//               <i className="fa-brands fa-github"></i>
+//             </a>
+//             <a
+//               className="live pb-3 ms-2 fs-6 link-secondary"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               href="https://raw.githack.com/ahmadchata/newsweek/feature-homepage/index.html"
+//             >
+//               <i className="fas fa-satellite-dish"></i>
+//             </a>{" "}
+//             <p className="text-uppercase">
+//               <b>newsweek</b>
+//             </p>
+//           </li>
+//           <li className="link">
+//             <p className="text-uppercase">
+//               <b>Bimacred website</b>
+//             </p>
+//           </li>
+//           <li className="link">
+//             <p className="text-uppercase">
+//               <b>Rootsearch Security Nigeria Limited Website</b>
+//             </p>
+//           </li>
+//           <li className="link">
+//             <p className="text-uppercase">
+//               <b>Armed Forces Radio</b>
+//             </p>
+//           </li>
+//           <li className="link">
+//             <p className="text-uppercase">
+//               <b>Logxercise</b>
+//             </p>
+//           </li>
+//           <li className="link">
+//             <p className="text-uppercase">
+//               <b>CSS Linter</b>
+//             </p>
+//           </li>
+//           <li className="link">
+//             <p className="text-uppercase">
+//               <b>Social Media</b>
+//             </p>
+//           </li>
+//         </ul>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Projects;
