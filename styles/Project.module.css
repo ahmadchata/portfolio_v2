@@ -42,7 +42,43 @@
   .purple {
     background-color: #9d65d0;
   }
-  
+
+  .projectsHolder {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+  }
+
+  .projectsHolder > a {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+  }
+
+  .projectsHolder > a:hover {
+    flex: 2;
+  }
+
+  .projects, .projectsOne {
+    background-image: url("../public/img/linter.png");
+  }
+
+  .projects::before {
+   content: "Yes";
+  }
+
+  .projectsOne::before {
+    content: "No";
+  }
+
+  .main {
+    height: calc(100vh - 122px);
+    vertical-align: auto;
+  }
+
   @media (max-width: 750px) {
     .card {
       width: 40%;
