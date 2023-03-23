@@ -1,12 +1,12 @@
 .background {
-    /* background: #e9effd; */
+    background: #e9effd;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh + 122px);
   }
   
   .scrollText {
@@ -31,52 +31,6 @@
   
   .sticky {
     margin-left: 15%;
-    /* background-color: #ff6d6d; */
-  }
-  
-  .blue {
-    background-color: #5b65ad;
-    color: white;
-  }
-  
-  .purple {
-    background-color: #9d65d0;
-  }
-
-  .projectsHolder {
-    display: flex;
-    height: 20rem;
-    gap: 1rem;
-  }
-
-  .projectsHolder > a {
-    flex: 1;
-    border-radius: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
-  }
-
-  .projectsHolder > a:hover {
-    flex: 2;
-  }
-
-  .projects, .projectsOne {
-    background-image: url("../public/img/linter.png");
-  }
-
-  .projects::before {
-   content: "Yes";
-  }
-
-  .projectsOne::before {
-    content: "No";
-  }
-
-  .main {
-    height: calc(100vh - 122px);
-    vertical-align: auto;
   }
 
   @media (max-width: 750px) {

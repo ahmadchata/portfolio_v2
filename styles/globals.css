@@ -91,7 +91,7 @@ main {
 }
 
 .project-heading {
-  font-size: 150px;
+  font-size: 120px;
 }
 
 .short-bio {
@@ -209,7 +209,7 @@ footer {
 /* ===== Responsiveness ===== */
 
 @media only screen and (max-width: 767px) {
-  .name-heading {
+  .name-heading, .project-heading {
     font-size: 36px;
   }
 
