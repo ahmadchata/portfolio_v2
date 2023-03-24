@@ -14,7 +14,7 @@ const Projects = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className={styles.background} /> */}
+      <div className={styles.background} />
 
       <Parallax pages={6}>
         <ParallaxLayer
@@ -29,7 +29,7 @@ const Projects = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          sticky={{ start: 1, end: 3 }}
+          sticky={{ start: 1, end: 2 }}
           style={{
             ...alignCenter,
             justifyContent: "flex-start",
@@ -47,12 +47,12 @@ const Projects = () => {
         >
           <div className={`${styles.card} ${styles.parallax}`}>
             <div>
-              <h1 className="text-dark">Linter</h1>
+              <h1 className="monteya-font orange">Linter</h1>
               <Image
                 src="/img/linter.png"
-                width={964}
-                height={684}
-                alt="Linter"
+                width={705}
+                height={500}
+                alt="Linter screenshot"
               />
             </div>
           </div>
@@ -63,39 +63,21 @@ const Projects = () => {
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
-          <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
+          <div className={`${styles.card} ${styles.parallax}`}>
             <div>
-              <h1 className="text-dark">Social</h1>
+              <h1 className="monteya-font orange">Social</h1>
               <Image
                 src="/img/social.png"
-                width={964}
-                height={684}
-                alt="Linter"
+                width={705}
+                height={500}
+                alt="Social media screenshot"
               />
             </div>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={3.0}
-          speed={1.5}
-          style={{ ...alignCenter, justifyContent: "flex-end" }}
-        >
-          <div className={`${styles.card} ${styles.parallax} ${styles.blue}`}>
-            <div>
-              <h1 className="text-dark">Logxercise</h1>
-              <Image
-                src="/img/exercise.png"
-                width={602}
-                height={1024}
-                alt="Linter"
-              />
-            </div>
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          sticky={{ start: 4, end: 5 }}
+          sticky={{ start: 3, end: 5 }}
           style={{
             ...alignCenter,
             justifyContent: "flex-start",
@@ -109,18 +91,37 @@ const Projects = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={4.0}
+          offset={3.0}
           speed={1.5}
           style={{ ...alignCenter, justifyContent: "flex-end" }}
         >
           <div className={`${styles.card} ${styles.parallax}`}>
             <div>
-              <h1 className="text-dark">Linter</h1>
+              <h1 className="monteya-font orange">Rootsearch</h1>
               <Image
-                src="/img/linter.png"
-                width={964}
-                height={684}
-                alt="Linter"
+                className="ms-5"
+                src="/img/root.png"
+                width={412}
+                height={700}
+                alt="RootSearch website screenshot"
+              />
+            </div>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={4.0}
+          speed={1.5}
+          style={{ ...alignCenter, justifyContent: "flex-end" }}
+        >
+          <div className={`${styles.card} ${styles.parallax}`}>
+            <div className="">
+              <h1 className="orange monteya-font">Army</h1>
+              <Image
+                className="ms-5"
+                src="/img/army.png"
+                width={556}
+                height={700}
+                alt="Army website screenshot"
               />
             </div>
           </div>

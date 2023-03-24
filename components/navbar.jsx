@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="d-flex px-4 py-3 justify-content-between align-items-center branch-font sticky-top">
+    <nav className="d-flex px-4 py-2 justify-content-between align-items-center branch-font sticky-top">
       <div>
         <Link href={`/`} className="text-decoration-none orange">
           <h2 className="fw-bold dot m-0"></h2>
