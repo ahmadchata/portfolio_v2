@@ -69,6 +69,158 @@ nav {
 
 /* ===== Navbar End ===== */
 
+/* ===== Experience Start ===== */
+
+.products-content span {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.products-content h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+/* .products-content p {
+  position: relative;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.products-content p::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -100px;
+  width: 70px;
+  height: 1px;
+  background-color: #272b2b;
+} */
+
+.products-content {
+  margin-left: 20px;
+}
+
+.tab .tabs-item {
+  display: none;
+}
+
+.tab .tabs-item:first-child {
+  display: block;
+}
+
+.experience-tab .tabs-nav {
+  list-style-type: none;
+  margin: 0 0 10px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.experience-tab .tabs-nav::before {
+  background-color: #676a6a;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.experience-tab .tabs-nav li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 50px 20px;
+  position: relative;
+}
+
+.experience-tab .tabs-nav li span {
+  margin-top: 50px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.experience-tab .tabs-nav li span::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background-color: #676a6a;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.experience-tab .tabs-nav li span::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #676a6a;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.experience-tab .tabs-nav li::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  background-color: #909292;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.experience-tab .tabs-nav li:hover,
+.experience-tab .tabs-nav li.current {
+  color: #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.experience-tab .tabs-nav li:hover::before,
+.experience-tab .tabs-nav li.current::before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.experience-tab .tabs-nav li:hover span::after,
+.experience-tab .tabs-nav li.current span::after {
+  background-color: #000000;
+}
+
+.experience-tab .tab-content {
+  position: relative;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* ===== Experience End ===== */
+
+
 /* ===== Home Start ===== */
 
 main {
@@ -202,6 +354,35 @@ footer {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(223, 102, 80, 0);
   }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
 }
 
 /*==== Animations End ==== */
