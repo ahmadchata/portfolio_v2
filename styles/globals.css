@@ -71,37 +71,13 @@ nav {
 
 /* ===== Experience Start ===== */
 
-.products-content span {
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.products-content h2 {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-/* .products-content p {
-  position: relative;
-  margin-left: 100px;
-  margin-bottom: 40px;
-}
-
-.products-content p::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -100px;
-  width: 70px;
-  height: 1px;
-  background-color: #272b2b;
-} */
-
-.products-content {
-  margin-left: 20px;
+.ex-center {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .tab .tabs-item {
@@ -204,7 +180,7 @@ nav {
 
 .experience-tab .tabs-nav li:hover span::after,
 .experience-tab .tabs-nav li.current span::after {
-  background-color: #000000;
+  background-color: #df6650;
 }
 
 .experience-tab .tab-content {
@@ -226,7 +202,7 @@ nav {
 main {
 	background: #e9effd;
   display: flex;
-  height: calc(100vh - 122px);
+  height: calc(100vh - 108px);
 }
 
 .center {
