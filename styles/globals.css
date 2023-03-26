@@ -129,24 +129,37 @@ nav {
   width: 1px;
   height: 30px;
   background-color: #676a6a;
-  border-radius: 50%;
   margin: auto;
 }
 
 .experience-tab .tabs-nav li span::after {
   content: "";
   position: absolute;
-  top: -7px;
+  top: -12px;
   left: 0;
   right: 0;
-  width: 15px;
-  height: 15px;
-  background-color: #676a6a;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
   margin: auto;
 }
 
-.experience-tab .tabs-nav li::before {
+.cyber::after {
+  background-image: url("../public/img/cyberwarfare.png");
+}
+
+.insurpass::after {
+  background-image: url("../public/img/insurpass.png");
+  background-color: #fff;
+}
+
+.microverse::after {
+  background-image: url("../public/img/microverse.png");
+}
+
+/* .experience-tab .tabs-nav li::before {
   content: "";
   position: absolute;
   top: -12px;
@@ -163,9 +176,9 @@ nav {
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
+} */
 
-.experience-tab .tabs-nav li:hover,
+/* .experience-tab .tabs-nav li:hover,
 .experience-tab .tabs-nav li.current {
   color: #000000;
   -webkit-transition: all 0.5s;
@@ -176,11 +189,11 @@ nav {
 .experience-tab .tabs-nav li.current::before {
   -webkit-transform: scale(1);
   transform: scale(1);
-}
+} */
 
 .experience-tab .tabs-nav li:hover span::after,
 .experience-tab .tabs-nav li.current span::after {
-  background-color: #df6650;
+  border-top: 3px solid #df6650;
 }
 
 .experience-tab .tab-content {
@@ -202,7 +215,7 @@ nav {
 main {
 	background: #e9effd;
   display: flex;
-  height: calc(100vh - 108px);
+  height: calc(100vh - 96px);
 }
 
 .center {
