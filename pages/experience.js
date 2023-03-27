@@ -29,9 +29,9 @@ class Experience extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main>
+        <main className="main">
           <div className="ex-center">
-            <h1 className="monteya-font orange mb-5 name-heading">
+            <h1 className="monteya-font orange mb-5 name-heading mt-4 mt-lg-0">
               Experience
             </h1>
 
@@ -59,7 +59,7 @@ class Experience extends Component {
                 <div id="tab1" className="tabs-item">
                   <div className="row align-items-center">
                     <div className="col-lg-4">
-                      <div className="">
+                      <div className="text-center">
                         <span className="branch-font fs-5">
                           Front-End Engineer
                         </span>
@@ -96,7 +96,7 @@ class Experience extends Component {
                 <div id="tab2" className="tabs-item">
                   <div className="row align-items-center">
                     <div className="col-lg-4">
-                      <div className="">
+                      <div className="text-center">
                         <span className="branch-font fs-5">
                           Front-End Engineer
                         </span>
@@ -134,7 +134,7 @@ class Experience extends Component {
                 <div id="tab3" className="tabs-item">
                   <div className="row align-items-center">
                     <div className="col-lg-4">
-                      <div className="">
+                      <div className="text-center">
                         <span className="branch-font fs-4">
                           Full-Stack Web Developer
                         </span>

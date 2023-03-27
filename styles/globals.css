@@ -212,7 +212,7 @@ nav {
 
 /* ===== Home Start ===== */
 
-main {
+main, .main {
 	background: #e9effd;
   display: flex;
   height: calc(100vh - 96px);
@@ -386,6 +386,10 @@ footer {
   .arrow:before {
     font-size: 1rem;
     content: "⬇";
+  }
+
+  .main {
+    height: calc(100vh + 96px);
   }
 
   .center {
