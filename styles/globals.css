@@ -193,7 +193,8 @@ nav {
 
 .experience-tab .tabs-nav li:hover span::after,
 .experience-tab .tabs-nav li.current span::after {
-  border-top: 3px solid #df6650;
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }
 
 .experience-tab .tab-content {

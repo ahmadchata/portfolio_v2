@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useState } from "react";
-import BioButtons from "@/components/buttons";
+import BioButtons from "../components/buttons";
 import Bio from "../public/data/bio.json";
-import WrittenName from "@/components/writtenName";
+import WrittenName from "../components/writtenName";
 
 export default function Home() {
   const [bio, setBio] = useState();
