@@ -25,11 +25,11 @@ const Navbar = () => {
           </Link>
         </li>
 
-        {/* <li>
-          <Link href={`/`} className="links">
+        <li>
+          <Link href={`/blogs`} className="links">
             Blog
           </Link>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );
