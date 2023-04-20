@@ -26,7 +26,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link href={`/blogs`} className="links">
+          <Link href={`/blog`} className="links">
             Blog
           </Link>
         </li>
