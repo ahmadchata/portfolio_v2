@@ -1,8 +1,5 @@
-/* eslint-disable react/no-children-prop */
 import React from "react";
 import Router from "next/router";
-import Link from "next/link";
-import ReactMarkdown from "react-markdown";
 
 export type PostProps = {
   id: string;
@@ -21,7 +18,6 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
     <div onClick={() => Router.push("/blog/[id]", `/blog/${post.id}`)}>
       <h2>{post.title}</h2>
       <small>By {authorName}</small>
-      {/* <ReactMarkdown children={post.content} /> */}
     </div>
   );
 };
