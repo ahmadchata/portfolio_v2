@@ -19,7 +19,7 @@ const Navbar = () => {
             Projects
           </Link>
         </li> */}
-        <li className="">
+        <li className="mx-4">
           <Link href={`/experience`} className="links">
             Experience
           </Link>
