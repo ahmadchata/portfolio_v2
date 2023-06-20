@@ -3,6 +3,12 @@ import BioButtons from "../components/buttons";
 import Bio from "../public/data/bio.json";
 import WrittenName from "../components/writtenName";
 import Layout from "../components/Layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   const [bio, setBio] = useState();
@@ -41,22 +47,31 @@ export default function Home() {
             )}
           </div>
           <WrittenName />
-          {/* <div className="mb-4 socials">
+          <div className="d-flex mt-5">
             <a
-              className="twitter"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.twitter.com/ahmadchata/"
             >
-              <i className="fab fa-twitter"></i>
+              <FontAwesomeIcon
+                className="twitter"
+                icon={faTwitter}
+                color="#000"
+                size="2x"
+              />
             </a>
             <a
-              className="linkedin"
+              className="mx-4"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/ahmadchata/"
             >
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon
+                className="linkedin"
+                icon={faLinkedin}
+                color="#000"
+                size="2x"
+              />
             </a>
             <a
               className="github"
@@ -64,9 +79,14 @@ export default function Home() {
               rel="noopener noreferrer"
               href="https://www.github.com/ahmadchata/"
             >
-              <i className="fab fa-github"></i>
+              <FontAwesomeIcon
+                className="github"
+                icon={faGithub}
+                color="#000"
+                size="2x"
+              />
             </a>
-          </div> */}
+          </div>
         </section>
       </main>
     </Layout>
