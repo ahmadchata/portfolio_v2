@@ -30,10 +30,7 @@ export default function Home() {
           <div className="d-md-flex align-items-center">
             <p className="monteya-font m-0">About me</p>
             <p className="arrow mx-2 my-0"></p>
-            <BioButtons
-              buttons={["Short", "Long", "Long ago..."]}
-              submit={showBio}
-            />
+            <BioButtons buttons={["Short", "Long"]} submit={showBio} />
           </div>
           <div className="mt-4 bio-view">
             {bio === 0 && (
@@ -42,9 +39,9 @@ export default function Home() {
             {bio === 1 && (
               <p className="branch-font show mt-4">{Bio["long"]}</p>
             )}
-            {bio === 2 && (
+            {/* {bio === 2 && (
               <p className="branch-font show mt-4">{Bio["verylong"]}</p>
-            )}
+            )} */}
           </div>
           <WrittenName />
           <div className="d-flex mt-5">
