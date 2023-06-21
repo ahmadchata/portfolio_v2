@@ -20,11 +20,11 @@
 /* ===== Fonts Start ===== */
 
 .monteya-font {
-  font-family: 'Monteya', Courier, monospace;
+  font-family: "Monteya", Courier, monospace;
 }
 
 .branch-font {
-  font-family: 'Branch', Courier, monospace;
+  font-family: "Branch", Courier, monospace;
 }
 
 /* ===== Fonts End ===== */
@@ -50,7 +50,7 @@ nav {
 
 .dot {
   border-radius: 50%;
-  background:#df6650;
+  background: #df6650;
   width: 30px;
   height: 30px;
   box-shadow: 0 0 0 0 rgba(223, 102, 80, 1);
@@ -210,11 +210,11 @@ nav {
 
 /* ===== Experience End ===== */
 
-
 /* ===== Home Start ===== */
 
-main, .main {
-	background: #e9effd;
+main,
+.main {
+  background: #e9effd;
   display: flex;
   height: calc(100vh - 96px);
 }
@@ -253,34 +253,42 @@ main, .main {
 .active {
   --_p: 0px;
   --b: 3px;
-  --s: .45em;
+  --s: 0.45em;
   --color: #df6650;
   outline-color: var(--color);
-  outline-offset: .05em;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  outline-offset: 0.05em;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   font-size: 16px;
   border: 0;
 }
 
 .bio-buttons {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
-  outline-offset: .6em;
+  outline-offset: 0.6em;
   font-size: 16px;
   border: 0;
   user-select: none;
@@ -290,10 +298,18 @@ main, .main {
 }
 
 .bio-buttons:hover,
-.bio-buttons:focus-visible{
+.bio-buttons:focus-visible {
   --_p: 0px;
   outline-color: var(--color);
-  outline-offset: .05em;
+  outline-offset: 0.05em;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.linkedin:hover {
+  color: #0072b1;
 }
 
 /* ===== Home End ===== */
@@ -318,15 +334,15 @@ footer {
   }
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes pulse-orange {
@@ -334,12 +350,12 @@ footer {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(223, 102, 80, 0.702);
   }
-  
+
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(223, 102, 80, 0);;
+    box-shadow: 0 0 0 10px rgba(223, 102, 80, 0);
   }
-  
+
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(223, 102, 80, 0);
@@ -380,7 +396,8 @@ footer {
 /* ===== Responsiveness ===== */
 
 @media only screen and (max-width: 767px) {
-  .name-heading, .project-heading {
+  .name-heading,
+  .project-heading {
     font-size: 36px;
   }
 
@@ -394,7 +411,6 @@ footer {
   }
 
   .center {
-    width: 90%
+    width: 90%;
   }
-  
 }
