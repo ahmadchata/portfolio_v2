@@ -39,9 +39,6 @@ export default function Home() {
             {bio === 1 && (
               <p className="branch-font show mt-4">{Bio["long"]}</p>
             )}
-            {/* {bio === 2 && (
-              <p className="branch-font show mt-4">{Bio["verylong"]}</p>
-            )} */}
           </div>
           <WrittenName />
           <div className="d-flex mt-5">
