@@ -19,17 +19,17 @@ const Navbar = () => {
             Projects
           </Link>
         </li> */}
-        <li className="mx-4">
+        <li className="ms-4">
           <Link href={`/experience`} className="links">
             Experience
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link href={`/blog`} className="links">
             Blog
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
